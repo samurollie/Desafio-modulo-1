@@ -15,11 +15,13 @@
 </head>
 
 <body>
-  <nav>
+
+  <!-- NavBar -->
+  <nav id="navbar" class="py-2 bg-light">
     <div class="container">
       <div class="row">
         <div class="col">
-          <img id="logo" src="img/logo.png" class="img-thumbnail" alt="...">
+          <img id="logo" src="img/logo.png" alt="...">
         </div>
         <div class="col">
           <div class="d-flex flex-row-reverse bd-highlight mb-3">
@@ -41,7 +43,46 @@
         </div>
       </div>
     </div>
-  </nav> <!-- NavBar -->
+  </nav>
+  <!-- NavBar -->
+
+  <!-- Page Wrapper -->
+  <div class="d-flex">
+
+    <!-- SideBar -->
+    <ul class="nav flex-column" id="sidebar">
+      <li class="nav-item">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Contratos
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- SideBar -->
+
+    <!-- Page Content -->
+    <div class="d-flex flec-column flex-fill">
+
+    </div>
+    <!-- Page Content -->
+  </div>
+  <!-- Page Wrapper -->
+
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 

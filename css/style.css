@@ -1,3 +1,10 @@
 #logo {
     width: 50px;
 }
+
+#sidebar {
+    width: 230px;
+    padding: 10px;
+    background-color: #142749;
+    height: 100vh;
+}
