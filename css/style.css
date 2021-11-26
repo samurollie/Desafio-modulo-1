@@ -8,3 +8,7 @@
     background-color: #142749;
     height: 100vh;
 }
+
+.card-title {
+    margin: 0;
+}
