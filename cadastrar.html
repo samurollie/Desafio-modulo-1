@@ -27,7 +27,7 @@
             <img id="logo" src="img/logo.png" alt="Logo da marca">
             <span class="text-uppercase lead px-1 border-end">Marca</span>
             <span class="text-bold px-1">Portal teste</span>
-             
+
           </div>
         </div>
         <div class="col">
@@ -90,11 +90,15 @@
         </nav>
 
         <div class="card">
+
           <div class="card-header">
             <h5 class="card-title">Cadastrar contrato</h5>
 
           </div>
+
           <div class="card-body">
+
+            <!-- Abas Config -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="geral-tab" data-bs-toggle="tab" data-bs-target="#geral"
@@ -104,7 +108,13 @@
                 <button class="nav-link" id="itens-tab" data-bs-toggle="tab" data-bs-target="#itens" type="button"
                   role="tab" aria-controls="itens" aria-selected="true">Itens</button>
               </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="projetos-tab" data-bs-toggle="tab" data-bs-target="#projetos" type="button"
+                  role="tab" aria-controls="projetos" aria-selected="true">Projetos</button>
+              </li>
             </ul>
+            <!-- Abas Config -->
+
             <div class="tab-content mt-2" id="myTabContent">
 
               <!-- Aba Geral -->
@@ -155,11 +165,14 @@
                             Itens
                           </h5>
                         </div>
-                        <button class="btn btn-primary btn-small">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-small" data-bs-toggle="modal"
+                          data-bs-target="#CadastrarItemModal">
                           <i class="bi bi-plus-lg"></i>
                         </button>
                       </div>
                     </div>
+
                     <div class="card-body">
                       <table class="table">
                         <thead>
@@ -175,7 +188,7 @@
                         <tbody>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
+                            <td>Teste</td>
                             <td>1</td>
                             <td>10,00</td>
                             <td>10,00</td>
@@ -207,6 +220,51 @@
               </div>
               <!-- Aba Itens -->
 
+              <!-- Aba Projetos -->
+              <div class="tab-pane fade" id="projetos" role="tabpanel" aria-labelledby="projetos-tab">
+                <form>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <h5 class="card-title">
+                            Projetos
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Projeto</th>
+                            <th scope="col">Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Teste</td>
+                            <td>1</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th scope="row">
+                              Total
+                            </th>
+                            <td></td>
+                            <td>10,00</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Aba Projetos -->
             </div>
           </div>
           <div class="card-footer">
@@ -224,7 +282,7 @@
   </div>
   <!-- Page Wrapper -->
 
-  <!-- Modal Visualizar-->
+  <!-- Modal Visualizar Item-->
   <div class="modal fade" id="VisualizarItemModal" tabindex="-1" aria-labelledby="VisualizarItemModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
@@ -250,7 +308,42 @@
       </div>
     </div>
   </div>
+  <!-- Modal Visualizar Item-->
 
+  <!-- Modal Cadastrar Item-->
+  <div class="modal fade" id="CadastrarItemModal" tabindex="-1" aria-labelledby="CadastrarItemModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="CadastrarItemModalLabel">Cadastrar item</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row g-3">
+              <div class="col">
+                <label for="prestador" class="form-label">Prestador</label>
+                <input type="text" class="form-control" id="prestador" disabled>
+              </div>
+              <div class="col">
+                <label for="ordem" class="form-label">Ordem</label>
+                <input type="text" class="form-control" id="ordem" disabled>
+              </div>
+              <div class="col">
+                <label for="item-ordem" class="form-label">Item ordem</label>
+                <input type="text" class="form-control" id="item-ordem" disabled>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Cadastrar Item-->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
